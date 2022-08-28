@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* ================================================ */
+/* header */
+/* ================================================ */
+
+.nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.nav_collapse {
+    display: flex;
+}
+
+.nav_ul {
+    margin: 5px 50px;
+    display: flex;
+}
+
+.nav_ul_li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+}
+
+.nav-link:active {
+    color: black;
+}
+
+
+/* dropdown */
+/* ================================================ */
+
+.dropdown-menu {
+    display: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 5px 10px 8px #c5c5c5;
+}
+
+.dropdown_list {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.features_1::before {
+    content: url("/images/icon-todo.svg");
+    padding-right: 5px;
+}
+
+.features_2::before {
+    content: url("/images/icon-calendar.svg");
+    padding-right: 5px;
+}
+
+.features_3::before {
+    content: url("/images/icon-reminders.svg");
+    padding-right: 5px;
+}
+
+.features_4::before {
+    content: url("/images/icon-planning.svg");
+    padding-right: 5px;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+
+.features {
+    position: absolute;
+    left: 200px;
+    top: 60px;
+}
+
+.company {
+    position: absolute;
+left: 325px;
+top: 60px;
+list-style-type: none;
+}
+
+
+
+/* button */
+/* ================================================ */
+
+.nav_btn {
+background-color: white;
+padding: 10px;
+margin-left: 10px;
+font-size: 15px;
+border: none;
+color: rgb(73, 73, 73);
+/* border: none; */
+}
+
+.nav_btn:active {
+cursor: pointer;
+color: black;
+}
+
+.nav_btn_reg {
+border: 1px solid rgb(73, 73, 73);
+border-radius: 13px
+}
+.nav_menu{
+    display: none;
+}
+.nav_menu_btn{
+    border: none;
+    background-color:white;
+}
+
+
+
+
+
+
+
+
+
+/* ================================================ */
+/* overlay */
+/* ================================================ */
+
+.overlay{
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay_wrapper{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    padding: 10px 30px;
+}
+.overlay_close{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.overlay_ul{
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.overlay_ul_li{
+    list-style-type: none;
+    margin: 5px;
+}
+.overlay-link{
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    font-size: 20px;
+}
+.overlay-link:active, .overlay_btn:active{
+    color: black;
+}
+.overlay_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay_btn{
+    background-color: white;
+margin-bottom: 35px;
+font-size: 20px;
+border: none;
+color: rgb(73, 73, 73);
+}
+.overlay_btn_reg{
+    border: 1px solid rgb(73, 73, 73);
+border-radius: 20px;
+width: 100%;
+padding: 15px;
+}
+.overlay-link:active, .overlay_btn:active{
+    color: black;
+    cursor: pointer;
+}
+
+.overlay_features {
+    position: relative;
+    margin-left: 15px;
+}
+
+.overlay_company {
+    position: relative;
+list-style-type: none;
+margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================ */
+/* section */
+/* ================================================ */
+
+.section {
+width: 1100px;
+margin: 0 auto;
+display: flex;
+}
+
+.section_make {
+width: 55%;
+padding: 80px 50px 0px 10px;
+}
+
+.section_make-title {
+font-size: 80px;
+}
+
+.section_make-text {
+font-size: 25px;
+margin: 60px 0;
+color: rgb(73, 73, 73);
+}
+
+.section_make_btn {
+background-color: black;
+font-size: 18px;
+padding: 10px 20px;
+color: white;
+border-radius: 15px;
+border: 1px solid black;
+}
+
+.section_make_btn:active {
+    cursor: pointer;
+color: black;
+background-color: white;
+border: 1px solid black;
+}
+
+.section_img {
+width: 40%;
+}
+
+.section_images {
+width: 490px;
+}
+
+.section_make-pictures {
+margin-top: 100px;
+display: flex;
+}
+
+.section_make-pictures-list {
+list-style-type: none;
+margin: 15px 40px 0 0;
+padding-top: 10px;
+}
+
+.section_make-pictures-list:nth-child(2) {
+padding-top: 2px;
+}
+
+
+/* ================================================ */
+/* mobile design */
+/* ================================================ */
+
+
+@media only screen and (max-width:576px){
+    .container {
+        width: 100%;
+    }
+    
+    .nav {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav_collapse {
+        display: flex;
+        margin: 0 30px;
+    }
+    
+    .nav_ul {
+        margin: 5px 50px;
+        display: none;
+    }
+    
+    .nav_ul_li {
+        list-style-type: none;
+        margin: 0 10px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: rgb(121, 121, 121);
+    }
+    
+    .nav-link:active {
+        color: black;
+    }
+    .nav_buttons{
+        display: none;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        font-size: 19px;
+        box-shadow: none;
+    }
+    
+    .dropdown_list {
+        padding: 5px;
+        list-style-type: none;
+    }
+    
+    .features_1::before {
+        content: url("/images/icon-todo.svg");
+        padding-right: 5px;
+    }
+    
+    .features_2::before {
+        content: url("/images/icon-calendar.svg");
+        padding-right: 5px;
+    }
+    
+    .features_3::before {
+        content: url("/images/icon-reminders.svg");
+        padding-right: 5px;
+    }
+    
+    .features_4::before {
+        content: url("/images/icon-planning.svg");
+        padding-right: 5px;
+    }
+    
+    .dropdown-item {
+        text-decoration: none;
+        color: rgb(95, 95, 95);
+    }
+    
+    .features {
+        position: absolute;
+        left: 200px;
+        top: 60px;
+    }
+    
+    .company {
+        position: absolute;
+    left: 325px;
+    top: 60px;
+    list-style-type: none;
+    }
+    
+    .nav_btn {
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    border: none;
+    color: rgb(73, 73, 73);
+    /* border: none; */
+    }
+    
+    .nav_btn:active {
+    cursor: pointer;
+    color: black;
+    }
+    
+    .nav_btn_reg {
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 13px
+    }
+    .nav_menu{
+        display: block;
+    }
+    
+    .section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    
+    .section_make {
+    width: 100%;
+    padding: 80px 10px 0px 10px;
+    text-align: center;
+    }
+    
+    .section_make-title {
+    font-size: 50px;
+    }
+    
+    .section_make-text {
+    font-size: 25px;
+    margin: 60px 0;
+    color: rgb(73, 73, 73);
+    }
+    
+    .section_make_btn {
+    background-color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    }
+    
+    .section_make_btn:active {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    }
+    
+    .section_img {
+    width: 100%;
+    height: 433px;
+    background-image: url("/images/image-hero-mobile.png");
+    background-position: center;
+    background-size: 576px;
+    background-repeat: no-repeat;
+    }
+    
+    .section_images {
+        display: none;
+    }
+    
+    .section_make-pictures {
+    margin-top: 100px;
+    display: flex;
+    }
+    
+    .section_make-pictures-list {
+    list-style-type: none;
+    margin: 15px auto;
+    padding-top: 10px;
+    }
+    
+    .section_make-pictures-list:nth-child(2) {
+    padding-top: 2px;
+    }
+}
