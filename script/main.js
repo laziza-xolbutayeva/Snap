@@ -6,7 +6,7 @@ overlayF=document.querySelector("#overlay_f"),
 overlayC=document.querySelector("#overlay_c"),
 gambur=document.querySelector(".nav_menu_btn"),
 overlay=document.querySelector(".overlay"),
-overlayClose=document.querySelector(".overlay_close"),
+overlayClose=document.querySelector(".overlay_close_link"),
 featuresOption=document.querySelector(".features"),
 featuresArrow=document.querySelector(".arrow-down-f"),
 companyOption=document.querySelector(".company"),
@@ -17,16 +17,23 @@ OcompanyOption=document.querySelector(".overlay_company"),
 OcompanyArrow=document.querySelector(".arrow-down-overlay-c");
 
 
+let clickNum=0;
+
 function dropDown(selected,arrow){
-    selected.style.display="block";
+    if(clickNum==0){
+        selected.style.display="block";
         arrow.style.transform="rotate(180deg)";
         arrow.style.transition=".5s";
-        selected.addEventListener("mouseleave",()=>{
-            selected.style.display="none";
-            arrow.style.transform="rotate(360deg)";
-            arrow.style.transition=".5s";
-        });
+        clickNum=1;
+    }
+    else{
+        selected.style.display="none";
+        arrow.style.transform="rotate(360deg)";
+        arrow.style.transition=".5s";
+        clickNum=0;
+    }
 }
+
 
 gambur.addEventListener("click",()=>{
     overlay.style.width="100%";
@@ -39,5 +46,5 @@ overlayClose.addEventListener("click",()=>{
 
 features.addEventListener("click",()=>{dropDown(featuresOption,featuresArrow)});
 company.addEventListener("click",()=>{ dropDown(companyOption,companyArrow)});
-overlayF.addEventListener("click",()=>{ dropDown(OfeaturesOption,OfeaturesArrow)});
+overlayF.addEventListener("click",()=>{ dropDown(OfeaturesOption,OfeaturesArrow);});
 overlayC.addEventListener("click",()=>{ dropDown(OcompanyOption,OcompanyArrow)});

@@ -54,7 +54,7 @@
     background-color: white;
     padding: 10px;
     font-size: 14px;
-    box-shadow: 5px 10px 8px #c5c5c5;
+    box-shadow: 1px 5px 15px 15px #e7e7e748;
 }
 
 .dropdown_list {
@@ -89,13 +89,13 @@
 
 .features {
     position: absolute;
-    left: 200px;
+    left: 150px;
     top: 60px;
 }
 
 .company {
     position: absolute;
-left: 325px;
+left: 280px;
 top: 60px;
 list-style-type: none;
 }
