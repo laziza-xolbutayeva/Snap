@@ -28,6 +28,7 @@
 .nav_ul {
     margin: 5px 50px;
     display: flex;
+    position: relative;
 }
 
 .nav_ul_li {
@@ -89,14 +90,14 @@
 
 .features {
     position: absolute;
-    left: 150px;
-    top: 60px;
+    left: -20px;
+    top: 30px;
 }
 
 .company {
     position: absolute;
-left: 280px;
-top: 60px;
+left: 100px;
+top: 30px;
 list-style-type: none;
 }
 

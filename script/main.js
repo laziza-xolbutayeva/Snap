@@ -33,6 +33,21 @@ function dropDown(selected,arrow){
         clickNum=0;
     }
 }
+let clickNumC=0;
+function dropDownCompany(selected,arrow){
+    if(clickNumC==0){
+        selected.style.display="block";
+        arrow.style.transform="rotate(180deg)";
+        arrow.style.transition=".5s";
+        clickNumC=1;
+    }
+    else{
+        selected.style.display="none";
+        arrow.style.transform="rotate(360deg)";
+        arrow.style.transition=".5s";
+        clickNumC=0;
+    }
+}
 
 
 gambur.addEventListener("click",()=>{
@@ -45,6 +60,6 @@ overlayClose.addEventListener("click",()=>{
 })
 
 features.addEventListener("click",()=>{dropDown(featuresOption,featuresArrow)});
-company.addEventListener("click",()=>{ dropDown(companyOption,companyArrow)});
+company.addEventListener("click",()=>{ dropDownCompany(companyOption,companyArrow)});
 overlayF.addEventListener("click",()=>{ dropDown(OfeaturesOption,OfeaturesArrow);});
-overlayC.addEventListener("click",()=>{ dropDown(OcompanyOption,OcompanyArrow)});
+overlayC.addEventListener("click",()=>{ dropDownCompany(OcompanyOption,OcompanyArrow)});
